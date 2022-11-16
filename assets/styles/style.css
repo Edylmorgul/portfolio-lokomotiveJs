@@ -35,7 +35,7 @@ body{
 
 /* Modification des h2 */
 h2{
-    font-size: calc(3rem + 5vw); /* taille dynamique ==> minimum / sinon */
+    font-size: calc(3rem + 5vw); /* taille dynamique ==> minimum / sinon ==> solution secondaire au media query */
     text-align: center;
     color: rgb(217, 217, 217);
     font-family: "font-bold", serif;
@@ -122,6 +122,44 @@ a:hover::after{
     transform-origin: left;
     transition-delay: 0.65s;
 }
+
+/* Header */
+header{
+    height: 100vh;
+    position: relative;
+    margin: 2vw 2vw 0;
+}
+
+.links{
+    display: flex; /* scale ne fonctionne pas sans flex */
+    justify-content: space-between; /* jcsb */
+}
+
+h1{
+    font-size: calc(2rem + 8vw);
+    margin-top: 70px;
+    font-family: "font-bold", serif; /* ff */
+    letter-spacing: 6px;
+    color: #fefeff;
+}
+
+header h2{ /* Touche tous les h2, seulement dans le header */
+    font-size: calc(1rem + 6.5vw);
+    margin: 18px 0;
+    text-align: left;
+}
+
+.scroll-wrapper{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%); /* Afin de centrer ==> sinon se centre par rapport à sa première lettre */
+    bottom: 3.5vw;
+    color:rgb(217, 217, 217);
+    font-size: calc(0.8rem + 0.5vw);
+}
+
+/* About */
+
 
 /* Absolute ==> peut-être placé n'importe ou dans les frontières de son éléments parent
 ==> parent == élément en relative, si pas, par défaut le body */
