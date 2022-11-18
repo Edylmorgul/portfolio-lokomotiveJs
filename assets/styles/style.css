@@ -266,5 +266,26 @@ header h2{ /* Touche tous les h2, seulement dans le header */
     color: #fefeff;
 }
 
+/* Footer */
+footer{
+    margin: 150px 0 120px;
+}
+
+footer p{
+    font-size: calc(1rem + 2vw);
+    margin: 25px 0;
+    text-align: center; /* tac */
+}
+
+footer a{
+    font-family: "font-bold", serif;
+    color:#000101;
+    font-size: calc(1rem + 2vw);
+}
+
+.img2{
+    background: url(../img/bill-gates-2.jpg) center/cover;
+}
+
 /* Absolute ==> peut-être placé n'importe ou dans les frontières de son éléments parent
 ==> parent == élément en relative, si pas, par défaut le body */
