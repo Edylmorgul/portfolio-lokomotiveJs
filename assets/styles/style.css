@@ -119,8 +119,33 @@ a:hover::after{
     margin: 0 auto;
     background: #000101;
     transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
-    transform-origin: left;
-    transition-delay: 0.65s;
+    /*transform-origin: left;*/
+    transition-delay: 0.45s;
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.line-wrapper.is-inview .line{
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.wrapper{
+    perspective: 900px;
+}
+
+.appear{
+    opacity: 0;
+    transform: translateY(100%) rotateX(-80deg);
+    transform-origin: top-center;
+    transform-style: preserve-3d;
+    transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.appear.is-inview{
+    transition-delay: 1s;
+    opacity: 1;
+    transform: none;
 }
 
 /* Header */
@@ -135,6 +160,10 @@ header{
     justify-content: space-between; /* jcsb */
 }
 
+#h1-wrapper{
+    transition-delay: 0.3s;
+}
+
 h1{
     font-size: calc(2rem + 8vw);
     margin-top: 70px;
@@ -147,6 +176,14 @@ header h2{ /* Touche tous les h2, seulement dans le header */
     font-size: calc(1rem + 6.5vw);
     margin: 18px 0;
     text-align: left;
+}
+
+#h2-1{
+    transition-delay: 0.9s;
+}
+
+#h2-2{
+    transition-delay: 1.2s;
 }
 
 .scroll-wrapper{
