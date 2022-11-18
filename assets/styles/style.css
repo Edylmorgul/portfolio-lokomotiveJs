@@ -209,5 +209,62 @@ header h2{ /* Touche tous les h2, seulement dans le header */
     padding: 0 12px 12px 12px; /* haut droite bas gauche */
 }
 
+/* Portfolio */
+.portfolio{
+    margin: 200px 0;
+}
+
+.projects-container{
+    margin-top: 100px;
+}
+
+.project{
+    position: relative;
+    width: 60vw;
+    max-width: 600px;
+    margin: 50px 5vw;
+}
+
+#p2{
+    margin: 0 6vw 0 auto;
+}
+
+#p3{
+    margin-left: 8vw;
+}
+
+.project img{
+    transition: 0.4s ease-out;
+    width: 100%; /* 100% de la taille de ton parent  100vw = 100% de tout l'écran */ 
+}
+
+.project:hover img{
+    filter: brightness(20%);
+}
+
+.project:hover .project-infos{
+    opacity: 1;
+    transform: translate(0, -50%);
+}
+
+.project-infos{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50px, -50%); /* axe x / axe y */
+    margin-left: 8vw;
+    transition: 0.4s ease-out;
+    opacity: 0; /* Cacher élément */
+}
+
+.project-infos a {
+    font-size: calc(1rem + 3vw);
+}
+
+.project-infos p{
+    font-size: 2rem;
+    margin-top: 1.5vw;
+    color: #fefeff;
+}
+
 /* Absolute ==> peut-être placé n'importe ou dans les frontières de son éléments parent
 ==> parent == élément en relative, si pas, par défaut le body */
