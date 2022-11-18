@@ -159,7 +159,55 @@ header h2{ /* Touche tous les h2, seulement dans le header */
 }
 
 /* About */
+.about{
+    margin: 400px 0 250px;
+}
 
+.img1{
+    background: url(../img/bill-gates-1.jpg) top/cover;
+}
+
+.h2-wrapper{
+    mix-blend-mode: exclusion; /* Lire quelque chose au travers */
+    margin: -220px 0 200px;
+}
+
+.about p{
+    width: 70%;
+    min-width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: calc(7px + 4.5vw);
+    font-size: calc(1rem + 1vw);
+    letter-spacing: 1px;
+}
+
+/* Expertise */
+.skills{
+    margin: 200px 0 250px;
+}
+
+.skills h2{
+    margin-bottom: 150px;
+}
+
+.skills .wrapper{
+    margin: 30px 0;
+}
+
+.skills .appear{
+    text-align: center;
+}
+
+.skills p{
+    font-size: calc(1rem + 6vw);
+    font-family: "font-bold", serif;
+    letter-spacing: 4px;
+    background: #000101;
+    color: #fefeff;
+    display: inline-block; /* Au lieu de prendre tout l'espace, s'arrête là ou il a besoin */
+    padding: 0 12px 12px 12px; /* haut droite bas gauche */
+}
 
 /* Absolute ==> peut-être placé n'importe ou dans les frontières de son éléments parent
 ==> parent == élément en relative, si pas, par défaut le body */
