@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="is-smooth-scroll-compatible is-loaded is-ready has-scroll-init has-scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Pierard Loic</title>
 
+    <link rel="stylesheet" href="./assets/lib/locomotive-scroll.min.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-    <!-- Partie header -->
+    <div data-scroll-container>
+        <!-- Partie header -->
     <header>
         <div class="links">
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio" date-scroll-to>Portfolio</a>
             <a href="mailto:loic@outlook.com">Contact</a>
         </div>
 
@@ -22,7 +24,7 @@
             </div>
         </div>
 
-        <div class="wrapper">
+        <div data-scroll data-scroll-repeat="true" class="wrapper" id="color">
             <div class="appear" id="h2-1">
                 <h2>Développeur</h2>
             </div>
@@ -222,6 +224,9 @@
             <div class="img img2"></div>
         </div>
     </footer>
+    </div>
     
+    <script src="./assets/lib/locomotive-scroll.min.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
